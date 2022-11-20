@@ -13,7 +13,6 @@ import {
   Checkbox,
   Button,
 } from "@chakra-ui/react";
-import * as icons from "react-icons/fi";
 
 function login() {
   return (
