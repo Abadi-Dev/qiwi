@@ -12,43 +12,65 @@ import {
   Text,
   Checkbox,
   Button,
+  GridItem,
+  Image,
+  Show,
+  Hide,
 } from "@chakra-ui/react";
 
 function login() {
   return (
-    <Flex minH={"100vh"} align="center" justify={"center"} bg={"cyan.100"}>
-      <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
-        <Stack align={"center"}>
-          <Heading fontSize={"4xl"}>Sign in to your your account</Heading>
-          <Text>And enjoy all of Qiwi features</Text>
-        </Stack>
-        <Box rounded={"lg"} bg={"white"} boxShadow={"lg"} p={8}>
-          <FormControl id="email">
-            <FormLabel>Email</FormLabel>
-            <Input type={"email"}></Input>
-          </FormControl>
-          <FormControl id="password">
-            <FormLabel>Password</FormLabel>
-            <Input type={"password"}></Input>
-          </FormControl>
-          <Stack spacing={10}>
-            <Stack
-              direction={{ base: "column", sm: "row" }}
-              align={"start"}
-              justify={"space-between"}
-            >
-              <Checkbox>Remember me</Checkbox>
-            </Stack>
-            <Button
-              bg={"cyan.100"}
-              color={"blackAlpha.700"}
-              _hover={{ bg: "cyan.200", color: "blackAlpha.900" }}
-            >
-              Sign in
-            </Button>
+    <Flex minH={"100vh"} align="center" justify={"center"} bg={"green.100"}>
+      <Hide below="md">
+        <GridItem minW={"40%"}>
+          <Stack align={"center"}>
+            <Box maxW={"60%"}>
+              <Image src="/images/qiwiIphone.png" alt="iphone image"></Image>
+            </Box>
           </Stack>
-        </Box>
-      </Stack>
+        </GridItem>
+      </Hide>
+      <GridItem minW={"60%"}>
+        <Stack spacing={12} mx={"auto"} maxW={"lg"}>
+          <Stack align={"start"}>
+            <Text fontWeight={"500"}>LOGIN TO YOUR ACOUNT</Text>
+            <Heading>AND START MANAGING YOUR RESTAURANT</Heading>
+          </Stack>
+          <Box
+            width={"100%"}
+            rounded={"md"}
+            bg={"white"}
+            boxShadow={"md"}
+            p={6}
+          >
+            <FormControl id="email">
+              <FormLabel>Email</FormLabel>
+              <Input type={"email"}></Input>
+            </FormControl>
+            <FormControl id="password">
+              <FormLabel>Password</FormLabel>
+              <Input type={"password"}></Input>
+            </FormControl>
+            <Stack spacing={10}>
+              <Stack
+                direction={{ base: "column", sm: "row" }}
+                align={"start"}
+                justify={"space-between"}
+              >
+                <Checkbox>Remember me</Checkbox>
+              </Stack>
+              <Button
+                bg={"green.100"}
+                color={"blackAlpha.700"}
+                _hover={{ bg: "green.200", color: "blackAlpha.900" }}
+                // type={"submit"}
+              >
+                Sign in
+              </Button>
+            </Stack>
+          </Box>
+        </Stack>
+      </GridItem>
     </Flex>
   );
 }
