@@ -20,7 +20,7 @@ import {
 
 function login() {
   return (
-    <Flex minH={"100vh"} align="center" justify={"center"} bg={"green.100"}>
+    <Flex minH={"100vh"} align="center" justify={"center"} bg={"whiteAlpha.900"}>
       <Hide below="md">
         <GridItem minW={"40%"}>
           <Stack align={"center"}>
@@ -39,7 +39,7 @@ function login() {
           <Box
             width={"100%"}
             rounded={"md"}
-            bg={"white"}
+            bg={"whiteAlpha.50"}
             boxShadow={"md"}
             p={6}
           >
@@ -61,7 +61,7 @@ function login() {
               </Stack>
               <Button
                 bg={"green.100"}
-                color={"blackAlpha.700"}
+                color={"blackAlpha.800"}
                 _hover={{ bg: "green.200", color: "blackAlpha.900" }}
                 // type={"submit"}
               >
