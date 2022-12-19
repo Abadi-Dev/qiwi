@@ -31,9 +31,10 @@ import {
   FiMenu,
   FiBell,
   FiChevronDown,
+  FiUsers
 } from "react-icons/fi";
 import { IconType } from "react-icons";
-import { ReactText } from "react";
+import { ReactText } from "react"
 
 interface LinkItemProps {
   name: string;
@@ -41,9 +42,9 @@ interface LinkItemProps {
 }
 const LinkItems: Array<LinkItemProps> = [
   { name: "Home", icon: FiHome },
-  { name: "Trending", icon: FiTrendingUp },
-  { name: "Explore", icon: FiCompass },
-  { name: "Favourites", icon: FiStar },
+  { name: "Charts", icon: FiTrendingUp },
+  { name: "Queue", icon: FiUsers },
+  { name: "Menu", icon: FiStar },
   { name: "Settings", icon: FiSettings },
 ];
 
